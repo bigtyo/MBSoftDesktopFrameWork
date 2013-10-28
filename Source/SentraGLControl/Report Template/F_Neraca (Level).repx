@@ -1,0 +1,309 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>SentraWinFramework, Version=3.1.0.0, Culture=neutral, PublicKeyToken=null</AssemblyFullName>
+///   <AssemblyLocation>C:\SentraProject\2007\SistemBukuBesar\SistemBukuBesar\bin\Debug\SentraWinFramework.dll</AssemblyLocation>
+///   <TypeName>SentraWinFramework.Report.xReport</TypeName>
+///   <Localization>en-US</Localization>
+///   <References>
+///     <Reference Path="C:\SentraProject\2007\SistemBukuBesar\SistemBukuBesar\bin\Debug\SentraWinFramework.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.Data.v7.2\7.2.2.0__9b171c9fd64da1d1\DevExpress.Data.v7.2.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Data.SqlXml\2.0.0.0__b77a5c561934e089\System.Data.SqlXml.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Security\2.0.0.0__b03f5f7f11d50a3a\System.Security.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\Accessibility\2.0.0.0__b03f5f7f11d50a3a\Accessibility.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Runtime.Serialization.Formatters.Soap\2.0.0.0__b03f5f7f11d50a3a\System.Runtime.Serialization.Formatters.Soap.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Deployment\2.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualC\8.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualC.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_32\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_32\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.DirectoryServices\2.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Runtime.Remoting\2.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_32\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Design\2.0.0.0__b03f5f7f11d50a3a\System.Design.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Drawing.Design\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.Design.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_32\System.Data.OracleClient\2.0.0.0__b77a5c561934e089\System.Data.OracleClient.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Web.RegularExpressions\2.0.0.0__b03f5f7f11d50a3a\System.Web.RegularExpressions.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.DirectoryServices.Protocols\2.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.Protocols.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.ServiceProcess\2.0.0.0__b03f5f7f11d50a3a\System.ServiceProcess.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Configuration.Install\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.Install.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.Utils.v7.2\7.2.2.0__9b171c9fd64da1d1\DevExpress.Utils.v7.2.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraGrid.v7.2\7.2.2.0__9b171c9fd64da1d1\DevExpress.XtraGrid.v7.2.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraEditors.v7.2\7.2.2.0__9b171c9fd64da1d1\DevExpress.XtraEditors.v7.2.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraReports.v7.2\7.2.2.0__9b171c9fd64da1d1\DevExpress.XtraReports.v7.2.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraPrinting.v7.2\7.2.2.0__9b171c9fd64da1d1\DevExpress.XtraPrinting.v7.2.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraRichTextEdit.v7.2\7.2.2.0__9b171c9fd64da1d1\DevExpress.XtraRichTextEdit.v7.2.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraBars.v7.2\7.2.2.0__9b171c9fd64da1d1\DevExpress.XtraBars.v7.2.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraNavBar.v7.2\7.2.2.0__9b171c9fd64da1d1\DevExpress.XtraNavBar.v7.2.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraCharts.v7.2\7.2.2.0__9b171c9fd64da1d1\DevExpress.XtraCharts.v7.2.dll" />
+///     <Reference Path="C:\SentraProject\2007\SistemBukuBesar\SistemBukuBesar\bin\Debug\SentraSolutionFramework.dll" />
+///     <Reference Path="C:\SentraProject\2007\SistemBukuBesar\SistemBukuBesar\bin\Debug\SentraUtility.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\System.Management\2.0.0.0__b03f5f7f11d50a3a\System.Management.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\Microsoft.JScript\8.0.0.0__b03f5f7f11d50a3a\Microsoft.JScript.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\Microsoft.Vsa\8.0.0.0__b03f5f7f11d50a3a\Microsoft.Vsa.dll" />
+///     <Reference Path="C:\SentraProject\2007\SistemBukuBesar\SistemBukuBesar\bin\Debug\SentraSecurity.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraPivotGrid.v7.2\7.2.2.0__9b171c9fd64da1d1\DevExpress.XtraPivotGrid.v7.2.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraPivotGrid.v7.2.Core\7.2.2.0__9b171c9fd64da1d1\DevExpress.XtraPivotGrid.v7.2.Core.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraTreeList.v7.2\7.2.2.0__9b171c9fd64da1d1\DevExpress.XtraTreeList.v7.2.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.BonusSkins.v7.2\7.2.2.0__95fc6c5621878f0a\DevExpress.BonusSkins.v7.2.dll" />
+///     <Reference Path="D:\WINDOWS\assembly\GAC_MSIL\DevExpress.OfficeSkins.v7.2\7.2.2.0__95fc6c5621878f0a\DevExpress.OfficeSkins.v7.2.dll" />
+///     <Reference Path="C:\SentraProject\2007\SistemBukuBesar\SistemBukuBesar\bin\Debug\Office2007Bonus.dll" />
+///   </References>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class xreport1 : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.DetailBand detailBand1;
+        private DevExpress.XtraReports.UI.XRTable xrTable1;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow1;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell1;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell2;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell3;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell4;
+        private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
+        private DevExpress.XtraReports.UI.XRLine xrLine1;
+        private SentraWinFramework.Report.xrFunction xrFunction2;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
+        private SentraWinFramework.Report.xrFunction xrFunction1;
+        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
+        private SentraWinFramework.Report.xrFunction xrFunction3;
+        private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo1;
+        private System.Resources.ResourceManager _resources;
+        public xreport1() {
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    string resourceString = "zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJza" +
+                        "W9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4O" +
+                        "SNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAABAAAAAAAAAFBBRFBBRFC58QzVA" +
+                        "AAAAAMBAABCZABlAHQAYQBpAGwAQgBhAG4AZAAxAC4AUwBjAHIAaQBwAHQAcwAuAE8AbgBCAGUAZgBvA" +
+                        "HIAZQBQAHIAaQBuAHQAAAAAAAHdCVN5c3RlbS5EcmF3aW5nLkZvbnQgRm50MTBCb2xkID0gbmV3IFN5c" +
+                        "3RlbS5EcmF3aW5nLkZvbnQoIkFyaWFsIiwgMTAsIA0KICAgIFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZ" +
+                        "S5Cb2xkKTsNClN5c3RlbS5EcmF3aW5nLkZvbnQgRm50MTFCb2xkID0gbmV3IFN5c3RlbS5EcmF3aW5nL" +
+                        "kZvbnQoIkFyaWFsIiwgMTEsIA0KICAgIFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZS5Cb2xkKTsNClN5c" +
+                        "3RlbS5EcmF3aW5nLkZvbnQgRm50OSA9IG5ldyBTeXN0ZW0uRHJhd2luZy5Gb250KCJBcmlhbCIsIDkpO" +
+                        "w0KUG9pbnQgUG9pbnQxID0gbmV3IFBvaW50KDgsMCk7DQpQb2ludCBQb2ludDIgPSBuZXcgUG9pbnQoO" +
+                        "Cw0KTsNCg0KcHJpdmF0ZSB2b2lkIE9uQmVmb3JlUHJpbnQob2JqZWN0IHNlbmRlciwgU3lzdGVtLkRyY" +
+                        "XdpbmcuUHJpbnRpbmcuUHJpbnRFdmVudEFyZ3MgZSkgDQp7DQogIGludCBMZXZlbCA9IChpbnQpR2V0Q" +
+                        "3VycmVudENvbHVtblZhbHVlKCJMZXZlbEFrdW4iKTsNCiAgaWYoKGJvb2wpR2V0Q3VycmVudENvbHVtb" +
+                        "lZhbHVlKCJQb3N0aW5nIik9PWZhbHNlKQ0KICB7DQogICAgaWYgKExldmVsID4gMSkNCiAgICB7DQogI" +
+                        "CAgICAgeHJUYWJsZUNlbGwyLkZvbnQgPSBGbnQxMEJvbGQ7DQogICAgICAgeHJUYWJsZUNlbGwzLkZvb" +
+                        "nQgPSBGbnQxMEJvbGQ7DQogICAgfQ0KICAgIGVsc2UNCiAgICB7DQogICAgICAgeHJUYWJsZUNlbGwyL" +
+                        "kZvbnQgPSBGbnQxMUJvbGQ7DQogICAgICAgeHJUYWJsZUNlbGwzLkZvbnQgPSBGbnQxMUJvbGQ7DQogI" +
+                        "CAgfQ0KICB9DQogIGVsc2UNCiAgew0KICAgIHhyVGFibGVDZWxsMi5Gb250ID0gRm50OTsNCiAgICB4c" +
+                        "lRhYmxlQ2VsbDMuRm9udCA9IEZudDk7DQogIH0NCg0KICBpZihMZXZlbD4xKQ0KICB7DQogICAgeHJUY" +
+                        "WJsZUNlbGwyLkJhY2tDb2xvciA9IENvbG9yLlRyYW5zcGFyZW50OyANCiAgICB4clRhYmxlQ2VsbDMuQ" +
+                        "mFja0NvbG9yID0gQ29sb3IuVHJhbnNwYXJlbnQ7DQogICAgeHJUYWJsZTEuTG9jYXRpb24gPSBQb2lud" +
+                        "DE7DQogIH0NCiAgZWxzZQ0KICB7DQogICAgeHJUYWJsZUNlbGwyLkJhY2tDb2xvciA9IENvbG9yLkxpZ" +
+                        "2h0R3JheTsNCiAgICB4clRhYmxlQ2VsbDMuQmFja0NvbG9yID0gQ29sb3IuTGlnaHRHcmF5Ow0KICAgI" +
+                        "HhyVGFibGUxLkxvY2F0aW9uID0gUG9pbnQyOw0KICB9DQogIGludCBzcGFzaSA9IChMZXZlbC0xKSoxM" +
+                        "DsNCiAgeHJUYWJsZUNlbGwxLldpZHRoID0gc3Bhc2k7DQogIHhyVGFibGVDZWxsNC5XaWR0aCA9IHNwY" +
+                        "XNpOw0KfQ==";
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.detailBand1 = new DevExpress.XtraReports.UI.DetailBand();
+            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.xrTable1 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
+            this.xrFunction2 = new SentraWinFramework.Report.xrFunction();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrFunction1 = new SentraWinFramework.Report.xrFunction();
+            this.xrFunction3 = new SentraWinFramework.Report.xrFunction();
+            this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // detailBand1
+            // 
+            this.detailBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrTable1});
+            this.detailBand1.Height = 17;
+            this.detailBand1.Name = "detailBand1";
+            this.detailBand1.Scripts.OnBeforePrint = resources.GetString("detailBand1.Scripts.OnBeforePrint");
+            // 
+            // PageHeader
+            // 
+            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrLabel2,
+                        this.xrLine1,
+                        this.xrFunction2,
+                        this.xrLabel1,
+                        this.xrFunction1});
+            this.PageHeader.Name = "PageHeader";
+            this.PageHeader.ParentStyleUsing.UseBackColor = false;
+            // 
+            // PageFooter
+            // 
+            this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.xrFunction3,
+                        this.xrPageInfo1});
+            this.PageFooter.Height = 36;
+            this.PageFooter.Name = "PageFooter";
+            // 
+            // xrTable1
+            // 
+            this.xrTable1.Location = new System.Drawing.Point(8, 0);
+            this.xrTable1.Name = "xrTable1";
+            this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+                        this.xrTableRow1});
+            this.xrTable1.Size = new System.Drawing.Size(725, 17);
+            // 
+            // xrTableRow1
+            // 
+            this.xrTableRow1.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+                        this.xrTableCell1,
+                        this.xrTableCell2,
+                        this.xrTableCell3,
+                        this.xrTableCell4});
+            this.xrTableRow1.Name = "xrTableRow1";
+            this.xrTableRow1.Size = new System.Drawing.Size(725, 17);
+            // 
+            // xrTableCell1
+            // 
+            this.xrTableCell1.Location = new System.Drawing.Point(0, 0);
+            this.xrTableCell1.Name = "xrTableCell1";
+            this.xrTableCell1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableCell1.Size = new System.Drawing.Size(71, 17);
+            // 
+            // xrTableCell2
+            // 
+            this.xrTableCell2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "NamaAkun", "")});
+            this.xrTableCell2.Location = new System.Drawing.Point(71, 0);
+            this.xrTableCell2.Name = "xrTableCell2";
+            this.xrTableCell2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableCell2.Size = new System.Drawing.Size(521, 17);
+            this.xrTableCell2.Text = "xrTableCell2";
+            this.xrTableCell2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrTableCell3
+            // 
+            this.xrTableCell3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Saldo", "{0:#,##0}")});
+            this.xrTableCell3.Location = new System.Drawing.Point(592, 0);
+            this.xrTableCell3.Name = "xrTableCell3";
+            this.xrTableCell3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableCell3.Size = new System.Drawing.Size(108, 17);
+            this.xrTableCell3.Text = "xrTableCell3";
+            this.xrTableCell3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // xrTableCell4
+            // 
+            this.xrTableCell4.Location = new System.Drawing.Point(700, 0);
+            this.xrTableCell4.Name = "xrTableCell4";
+            this.xrTableCell4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrTableCell4.Size = new System.Drawing.Size(25, 17);
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel2.Location = new System.Drawing.Point(567, 83);
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.ParentStyleUsing.UseFont = false;
+            this.xrLabel2.Size = new System.Drawing.Size(166, 17);
+            this.xrLabel2.Text = "Dalam Rupiah";
+            this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // xrLine1
+            // 
+            this.xrLine1.Borders = DevExpress.XtraPrinting.BorderSide.Top;
+            this.xrLine1.BorderWidth = 2;
+            this.xrLine1.Location = new System.Drawing.Point(0, 75);
+            this.xrLine1.Name = "xrLine1";
+            this.xrLine1.ParentStyleUsing.UseBorders = false;
+            this.xrLine1.ParentStyleUsing.UseBorderWidth = false;
+            this.xrLine1.Size = new System.Drawing.Size(733, 8);
+            // 
+            // xrFunction2
+            // 
+            this.xrFunction2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrFunction2.FormatString = "#,###.##";
+            this.xrFunction2.Location = new System.Drawing.Point(0, 0);
+            this.xrFunction2.Name = "xrFunction2";
+            this.xrFunction2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrFunction2.ParentStyleUsing.UseFont = false;
+            this.xrFunction2.Size = new System.Drawing.Size(733, 25);
+            this.xrFunction2.Text = "Umum.NamaPerusahaan";
+            this.xrFunction2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel1.Location = new System.Drawing.Point(0, 25);
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.ParentStyleUsing.UseFont = false;
+            this.xrLabel1.Size = new System.Drawing.Size(733, 25);
+            this.xrLabel1.Text = "N E R A C A";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrFunction1
+            // 
+            this.xrFunction1.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrFunction1.FormatString = "#,###.##";
+            this.xrFunction1.Location = new System.Drawing.Point(0, 50);
+            this.xrFunction1.Name = "xrFunction1";
+            this.xrFunction1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrFunction1.ParentStyleUsing.UseFont = false;
+            this.xrFunction1.Size = new System.Drawing.Size(733, 25);
+            this.xrFunction1.Text = "\"Per Tanggal \" + Umum.FormatTanggal(TglNeraca,\"dd MMMM yyyy\")";
+            this.xrFunction1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
+            // xrFunction3
+            // 
+            this.xrFunction3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrFunction3.FormatString = "#,###.##";
+            this.xrFunction3.Location = new System.Drawing.Point(8, 8);
+            this.xrFunction3.Multiline = true;
+            this.xrFunction3.Name = "xrFunction3";
+            this.xrFunction3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrFunction3.ParentStyleUsing.UseFont = false;
+            this.xrFunction3.Size = new System.Drawing.Size(475, 17);
+            this.xrFunction3.Text = "\"Laporan ini dibuat tanggal: \" +Umum.TglLaporan +\" \"+Umum.JamLaporan";
+            this.xrFunction3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // xrPageInfo1
+            // 
+            this.xrPageInfo1.Location = new System.Drawing.Point(667, 8);
+            this.xrPageInfo1.Name = "xrPageInfo1";
+            this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrPageInfo1.Size = new System.Drawing.Size(67, 17);
+            this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            // 
+            // xreport1
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.detailBand1,
+                        this.PageHeader,
+                        this.PageFooter});
+            this.Margins = new System.Drawing.Printing.Margins(46, 44, 56, 38);
+            this.Name = "xreport1";
+            this.PageHeight = 1169;
+            this.PageWidth = 827;
+            this.PaperKind = System.Drawing.Printing.PaperKind.A4;
+            this.ScriptReferencesString = "C:\\SentraProject\\2007\\SistemBukuBesar\\SistemBukuBesar\\bin\\Debug\\SentraWinFramewor" +
+                "k.dll";
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}

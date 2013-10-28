@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7E361179-46AA-4D2A-9F7F-9F283D899CD9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SentraWinFramework</RootNamespace>
+    <AssemblyName>SentraWinFramework</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.OfficeSkins.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v8.3.Core, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v8.3.UI, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoFormat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AutoFormat.Designer.cs">
+      <DependentUpon>AutoFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseWinFramework.cs">
+    </Compile>
+    <Compile Include="DocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentForm.designer.cs">
+      <DependentUpon>DocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityForm.cs" />
+    <Compile Include="frmCancelEntity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelEntity.Designer.cs">
+      <DependentUpon>frmCancelEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChooseEntity2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChooseEntity2.Designer.cs">
+      <DependentUpon>frmChooseEntity2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocument.designer.cs">
+      <DependentUpon>frmDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmActivityList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActivityList.Designer.cs">
+      <DependentUpon>frmActivityList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgressBar.Designer.cs">
+      <DependentUpon>frmProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowTable.Designer.cs">
+      <DependentUpon>frmShowTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSingletonEntity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSingletonEntity.Designer.cs">
+      <DependentUpon>frmSingletonEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridColl.cs" />
+    <Compile Include="GridRowMover2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridRowMover2.Designer.cs">
+      <DependentUpon>GridRowMover2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridRowMover3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridRowMover3.Designer.cs">
+      <DependentUpon>GridRowMover3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IEntityControl.cs" />
+    <Compile Include="IFormBindingSource.cs" />
+    <Compile Include="IGridRowMover.cs" />
+    <Compile Include="IUINavigator.cs" />
+    <Compile Include="Popup.cs" />
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmFreeReport2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmFreeReport2.designer.cs">
+      <DependentUpon>frmFreeReport2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmFunctionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmFunctionList.Designer.cs">
+      <DependentUpon>frmFunctionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmGridReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmGridReport.designer.cs">
+      <DependentUpon>frmGridReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmPreview2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmPreview2.designer.cs">
+      <DependentUpon>frmPreview2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmReportLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmReportLayout.Designer.cs">
+      <DependentUpon>frmReportLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmReportLayout2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmReportLayout2.Designer.cs">
+      <DependentUpon>frmReportLayout2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\IBrowseForm.cs" />
+    <Compile Include="Report\_ReportEntity.cs" />
+    <Compile Include="Report\ReportLayout.cs" />
+    <Compile Include="Report\ReportPreview.cs" />
+    <Compile Include="Report\IFreeReport.cs" />
+    <Compile Include="Report\xrPictureVar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIThread.cs" />
+    <Compile Include="WaitCursor.cs" />
+    <Compile Include="frmAturTampilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAturTampilan.Designer.cs">
+      <DependentUpon>frmAturTampilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChooseEntity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChooseEntity.Designer.cs">
+      <DependentUpon>frmChooseEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectTable.Designer.cs">
+      <DependentUpon>frmSelectTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IInitGrid.cs" />
+    <Compile Include="Localizer\BahasaGridLocalizer.cs" />
+    <Compile Include="Report\frmFreeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmFreeReport.designer.cs">
+      <DependentUpon>frmFreeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmGridReportTC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmGridReportTC.designer.cs">
+      <DependentUpon>frmGridReportTC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\xReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\xrFunction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\frmCetak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmCetak.Designer.cs">
+      <DependentUpon>frmCetak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmDefaultCetakDokumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmDefaultCetakDokumen.Designer.cs">
+      <DependentUpon>frmDefaultCetakDokumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmPreview.Designer.cs">
+      <DependentUpon>frmPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmSetDefault.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmSetDefault.Designer.cs">
+      <DependentUpon>frmSetDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmSaveLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmSaveLayout.Designer.cs">
+      <DependentUpon>frmSaveLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridRowMover.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridRowMover.Designer.cs">
+      <DependentUpon>GridRowMover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IEntityForm.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BrowseLayout.cs" />
+    <Compile Include="Report\ReportSingleEntity.cs" />
+    <Compile Include="ReportGrid.cs" />
+    <Compile Include="UINavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UINavigator.Designer.cs">
+      <DependentUpon>UINavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="xTreeList.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAturTampilan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAturTampilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChooseEntity.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChooseEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectTable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelectTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmCetak.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCetak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmDefaultCetakDokumen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDefaultCetakDokumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmPreview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmSaveLayout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSaveLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridRowMover.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridRowMover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmSetDefault.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSetDefault.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UINavigator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UINavigator.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXCEL.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\html doc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XML.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmChooseEntity2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChooseEntity2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmFreeReport.resx">
+      <DependentUpon>frmFreeReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmFunctionList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFunctionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmGridReportTC.resx">
+      <DependentUpon>frmGridReportTC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\xrFunction.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pdf.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xrFunction.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xrPictureVar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DocumentForm.resx">
+      <DependentUpon>DocumentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelEntity.resx">
+      <DependentUpon>frmCancelEntity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocument.resx">
+      <DependentUpon>frmDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActivityList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmActivityList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgressBar.resx">
+      <DependentUpon>frmProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowTable.resx">
+      <DependentUpon>frmShowTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSingletonEntity.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSingletonEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridRowMover2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridRowMover2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridRowMover3.resx">
+      <DependentUpon>GridRowMover3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ReportForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmFreeReport2.resx">
+      <DependentUpon>frmFreeReport2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmGridReport.resx">
+      <DependentUpon>frmGridReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmPreview2.resx">
+      <DependentUpon>frmPreview2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmReportLayout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReportLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmReportLayout2.resx">
+      <DependentUpon>frmReportLayout2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\xrPictureVar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTE12.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row_add_after.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor_brush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xReportDiagram.cd" />
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SentraSecurity\SentraSecurity.csproj">
+      <Project>{46C2338B-698B-4BD9-A0F9-CAD8047943A2}</Project>
+      <Name>SentraSecurity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SentraSolutionFramework\SentraSolutionFramework.csproj">
+      <Project>{FC43AC75-8B8A-4E5A-9D42-BEDCA018FEC8}</Project>
+      <Name>SentraSolutionFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SentraUtility\SentraUtility.csproj">
+      <Project>{D44FBDFE-A368-4A31-ABDF-5D646B36E854}</Project>
+      <Name>SentraUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_check1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_preferences1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor_preferences1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\element_find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\element_into_input.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\element_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\element_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\element_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\element_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\element_copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_refresh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_new1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_previous1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_next1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

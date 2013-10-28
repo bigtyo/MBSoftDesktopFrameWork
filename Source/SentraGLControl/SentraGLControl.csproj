@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4168E2AF-B059-4D22-9D54-1F1A2346E722}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SentraGL</RootNamespace>
+    <AssemblyName>SentraGLControl</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="SentraSecurity, Version=3.1.3365.30592, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Framework\SentraSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="SentraSolutionFramework, Version=3.1.3365.30592, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Framework\SentraSolutionFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="SentraUtility, Version=3.1.3365.30591, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Framework\SentraUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="SentraWinFramework, Version=3.1.3365.30594, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Framework\SentraWinFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="SentraWinSecurity, Version=3.1.3365.30596, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Framework\SentraWinSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseWinGL.cs" />
+    <Compile Include="Document\DocJurnal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document\DocJurnal.designer.cs">
+      <DependentUpon>DocJurnal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocJurnal2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document\DocJurnal2.Designer.cs">
+      <DependentUpon>DocJurnal2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocKursHarian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document\DocKursHarian.Designer.cs">
+      <DependentUpon>DocKursHarian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocPenerimaanKasUmum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document\DocPenerimaanKasUmum.Designer.cs">
+      <DependentUpon>DocPenerimaanKasUmum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocPengeluaranKasUmum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document\DocPengeluaranKasUmum.Designer.cs">
+      <DependentUpon>DocPengeluaranKasUmum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocPengeluaranPerintahBayar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document\DocPengeluaranPerintahBayar.Designer.cs">
+      <DependentUpon>DocPengeluaranPerintahBayar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocPerintahBayar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document\DocPerintahBayar.Designer.cs">
+      <DependentUpon>DocPerintahBayar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document\DocTransferAntarKas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document\DocTransferAntarKas.Designer.cs">
+      <DependentUpon>DocTransferAntarKas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLockDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLockDate.Designer.cs">
+      <DependentUpon>frmLockDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetingPerusahaan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetingPerusahaan.designer.cs">
+      <DependentUpon>frmSetingPerusahaan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DocAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DocAkun.designer.cs">
+      <DependentUpon>DocAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DocAturanJurnal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DocAturanJurnal.designer.cs">
+      <DependentUpon>DocAturanJurnal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DocDepartemen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DocDepartemen.designer.cs">
+      <DependentUpon>DocDepartemen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DocJenisDokSumberJurnal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DocJenisDokSumberJurnal.designer.cs">
+      <DependentUpon>DocJenisDokSumberJurnal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DocJenisPenerimaanKas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DocJenisPenerimaanKas.Designer.cs">
+      <DependentUpon>DocJenisPenerimaanKas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DocJenisPengeluaranKas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DocJenisPengeluaranKas.Designer.cs">
+      <DependentUpon>DocJenisPengeluaranKas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DocMataUang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DocMataUang.designer.cs">
+      <DependentUpon>DocMataUang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DocNilaiTukarSaldoAwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DocNilaiTukarSaldoAwal.Designer.cs">
+      <DependentUpon>DocNilaiTukarSaldoAwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DocProyek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DocProyek.designer.cs">
+      <DependentUpon>DocProyek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DocSaldoAwalAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DocSaldoAwalAkun.Designer.cs">
+      <DependentUpon>DocSaldoAwalAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DocTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DocTest.Designer.cs">
+      <DependentUpon>DocTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\LabaRugi\rptLabaRugi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\LabaRugi\rptLabaRugi.Designer.cs">
+      <DependentUpon>rptLabaRugi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\LabaRugi\rptLabaRugiBebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\LabaRugi\rptLabaRugiBebas.Designer.cs">
+      <DependentUpon>rptLabaRugiBebas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\LabaRugi\rptLabaRugiBulanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\LabaRugi\rptLabaRugiBulanan.Designer.cs">
+      <DependentUpon>rptLabaRugiBulanan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\LabaRugi\rptLabaRugiTahunan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\LabaRugi\rptLabaRugiTahunan.Designer.cs">
+      <DependentUpon>rptLabaRugiTahunan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\LabaRugi\rptLabaRugiMultiPeriode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\LabaRugi\rptLabaRugiMultiPeriode.Designer.cs">
+      <DependentUpon>rptLabaRugiMultiPeriode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\LabaRugi\rptLabaRugiPerbandingan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\LabaRugi\rptLabaRugiPerbandingan.Designer.cs">
+      <DependentUpon>rptLabaRugiPerbandingan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MutasiAkun\rptMutasiSemuaAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\MutasiAkun\rptMutasiSemuaAkun.Designer.cs">
+      <DependentUpon>rptMutasiSemuaAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaLvl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaLvl.Designer.cs">
+      <DependentUpon>rptNeracaLvl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaBebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaBebas.Designer.cs">
+      <DependentUpon>rptNeracaBebas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaBulananLvl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaBulananLvl.Designer.cs">
+      <DependentUpon>rptNeracaBulananLvl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaBulananKlp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaBulananKlp.Designer.cs">
+      <DependentUpon>rptNeracaBulananKlp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaKlp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaKlp.Designer.cs">
+      <DependentUpon>rptNeracaKlp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaMultiPeriodeLvl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaMultiPeriodeLvl.Designer.cs">
+      <DependentUpon>rptNeracaMultiPeriodeLvl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaMultiPeriodeKlp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaMultiPeriodeKlp.Designer.cs">
+      <DependentUpon>rptNeracaMultiPeriodeKlp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaPerbandinganLvl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaPerbandinganLvl.Designer.cs">
+      <DependentUpon>rptNeracaPerbandinganLvl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaPerbandinganKlp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Neraca\rptNeracaPerbandinganKlp.Designer.cs">
+      <DependentUpon>rptNeracaPerbandinganKlp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MutasiAkun\rptMutasiAkunTertentu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\MutasiAkun\rptMutasiAkunTertentu.Designer.cs">
+      <DependentUpon>rptMutasiAkunTertentu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RingkasanAkun\rptRingkasanAkunKlp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RingkasanAkun\rptRingkasanAkunKlp.Designer.cs">
+      <DependentUpon>rptRingkasanAkunKlp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptPosisiAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\rptPosisiAkun.Designer.cs">
+      <DependentUpon>rptPosisiAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RingkasanAkun\rptRingkasanAkunLvl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RingkasanAkun\rptRingkasanAkunLvl.Designer.cs">
+      <DependentUpon>rptRingkasanAkunLvl.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Document\DocJurnal.resx">
+      <DependentUpon>DocJurnal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Document\DocJurnal2.resx">
+      <DependentUpon>DocJurnal2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Document\DocKursHarian.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DocKursHarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Document\DocPenerimaanKasUmum.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DocPenerimaanKasUmum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Document\DocPengeluaranKasUmum.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DocPengeluaranKasUmum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Document\DocPengeluaranPerintahBayar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DocPengeluaranPerintahBayar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Document\DocPerintahBayar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DocPerintahBayar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Document\DocTransferAntarKas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DocTransferAntarKas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLockDate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLockDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetingPerusahaan.resx">
+      <DependentUpon>frmSetingPerusahaan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DocAkun.resx">
+      <DependentUpon>DocAkun.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DocAturanJurnal.resx">
+      <DependentUpon>DocAturanJurnal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DocDepartemen.resx">
+      <DependentUpon>DocDepartemen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DocJenisDokSumberJurnal.resx">
+      <DependentUpon>DocJenisDokSumberJurnal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DocJenisPenerimaanKas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DocJenisPenerimaanKas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DocJenisPengeluaranKas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DocJenisPengeluaranKas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DocMataUang.resx">
+      <DependentUpon>DocMataUang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DocNilaiTukarSaldoAwal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DocNilaiTukarSaldoAwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DocProyek.resx">
+      <DependentUpon>DocProyek.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DocSaldoAwalAkun.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DocSaldoAwalAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DocTest.resx">
+      <DependentUpon>DocTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\LabaRugi\rptLabaRugi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptLabaRugi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\LabaRugi\rptLabaRugiBebas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptLabaRugiBebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\LabaRugi\rptLabaRugiBulanan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptLabaRugiBulanan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\LabaRugi\rptLabaRugiTahunan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptLabaRugiTahunan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\LabaRugi\rptLabaRugiMultiPeriode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptLabaRugiMultiPeriode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\LabaRugi\rptLabaRugiPerbandingan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptLabaRugiPerbandingan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MutasiAkun\rptMutasiAkunTertentu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptMutasiAkunTertentu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MutasiAkun\rptMutasiSemuaAkun.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptMutasiSemuaAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Neraca\rptNeracaLvl.resx">
+      <DependentUpon>rptNeracaLvl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Neraca\rptNeracaBebas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptNeracaBebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Neraca\rptNeracaBulananLvl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptNeracaBulananLvl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Neraca\rptNeracaBulananKlp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptNeracaBulananKlp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Neraca\rptNeracaKlp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptNeracaKlp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Neraca\rptNeracaMultiPeriodeLvl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptNeracaMultiPeriodeLvl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Neraca\rptNeracaMultiPeriodeKlp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptNeracaMultiPeriodeKlp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Neraca\rptNeracaPerbandinganLvl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptNeracaPerbandinganLvl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Neraca\rptNeracaPerbandinganKlp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptNeracaPerbandinganKlp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RingkasanAkun\rptRingkasanAkunKlp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptRingkasanAkunKlp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RingkasanAkun\rptRingkasanAkunLvl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptRingkasanAkunLvl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptPosisiAkun.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>rptPosisiAkun.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\SentraGL.Document.KursHarian.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Master.Akun.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Master.JenisDokSumberJurnal.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\SentraGL.Document.Jurnal.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Master.Departemen.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Master.MasterAturanJurnal.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Master.MataUang.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Master.Proyek.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.LabaRugi.LabaRugi.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.LabaRugi.LabaRugiMultiPeriode.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.LabaRugi.LabaRugiPerbandingan.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.PosisiAkun.datasource" />
+    <None Include="Resources\document.png" />
+    <None Include="Resources\LabaRugi Tahunan.repx" />
+    <None Include="Resources\LabaRugi Multi Periode.repx" />
+    <None Include="Resources\LabaRugi Perbandingan.repx" />
+    <None Include="Resources\LabaRugi.repx" />
+    <None Include="Resources\Neraca Bulanan Detil.repx" />
+    <None Include="Resources\Neraca Bulanan.repx" />
+    <None Include="Resources\Neraca Detil.repx" />
+    <None Include="Resources\Neraca Multi Periode Detil.repx" />
+    <None Include="Resources\Neraca Multi Periode.repx" />
+    <None Include="Resources\Neraca Perbandingan Detil.repx" />
+    <None Include="Resources\Neraca Perbandingan.repx" />
+    <None Include="Resources\Neraca Saldo.repx" />
+    <None Include="Resources\Neraca.repx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\SentraGL.Document.PenerimaanKasUmum.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Document.PengeluaranKasUmum.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Document.PerintahBayar.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Document.TransferAntarKas.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Master.JenisPenerimaanKas.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Master.JenisPengeluaranKas.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Master.NilaiTukarSaldoAwal.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Master.SaldoAwalAkun.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Master.Test.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.LabaRugi.LabaRugiTahunan.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.MutasiAkun.MutasiAkunTertentu.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.MutasiAkun.MutasiSemuaAkun.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.Neraca.NeracaBebas.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.Neraca.NeracaBulananKlp.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.Neraca.NeracaBulananLevel.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.Neraca.NeracaKlp.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.Neraca.NeracaLevel.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.Neraca.NeracaMultiPeriodeKlp.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.Neraca.NeracaMultiPeriodeLevel.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.Neraca.NeracaPerbandinganKlp.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.Neraca.NeracaPerbandinganLevel.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.RingkasanAkun.RingkasanAkunKlp.datasource" />
+    <None Include="Properties\DataSources\SentraGL.Report.RingkasanAkun.RingkasanAkunLevel.datasource" />
+    <None Include="Properties\DataSources\SetingPerusahaan.datasource" />
+    <None Include="Report Template\F_Laba_ Rugi Bulanan.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Laba_ Rugi Multi Periode.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Laba_ Rugi Perbandingan.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Laba_ Rugi Tahunan.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Laba_ Rugi.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Neraca %28Kelompok%29.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Neraca %28Level%29.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Neraca Bebas.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Neraca Bulanan %28Kelompok%29.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Neraca Bulanan %28Level%29.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Neraca Multi Periode %28Kelompok%29.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Neraca Multi Periode %28Level%29.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Neraca Perbandingan %28Kelompok%29.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\F_Neraca Perbandingan %28Level%29.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\L_Posisi Akun.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\L_Ringkasan Akun %28Kelompok%29.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Report Template\L_Ringkasan Akun %28Level%29.repx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\LabaRugi Bulanan.repx" />
+    <None Include="Resources\Ringkasan Akun Kelompok.repx" />
+    <None Include="Resources\Ringkasan Akun Level.repx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SentraGL\SentraGLEntity.csproj">
+      <Project>{DC432EA0-F71A-4441-9F26-338EBB4AD7EF}</Project>
+      <Name>SentraGLEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

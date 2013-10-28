@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Segoe UI" Size="8.25" />
+  <Class Name="SentraSolutionFramework.Entity.BaseEntity">
+    <Position X="2.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Entity\ParentEntity.cs</FileName>
+      <HashCode>AhQAAigIQIACABQIiAVAAEAQgAA4RIIAIAAABAA0AJA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="_ErrorProps" Hidden="true" />
+      <Method Name="IBaseEntity.AfterPrint" Hidden="true" />
+      <Method Name="IBaseEntity.BeforePrint" Hidden="true" />
+      <Property Name="IDataErrorInfo.Error" Hidden="true" />
+      <Property Name="IDataErrorInfo.this" Hidden="true" />
+      <Field Name="PropertyChanged" Hidden="true" />
+    </Members>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SentraSolutionFramework.Entity.BusinessEntity">
+    <Position X="5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Entity\ParentEntity.cs</FileName>
+      <HashCode>QAAAEAQQAAWAAQgVgAEAEIQAAAAEAAAAQAAAIABIchA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Method Name="CheckEmptyFields" Hidden="true" />
+      <Method Name="ShallowClone" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="SentraSolutionFramework.Entity.ParentEntity">
+    <Position X="7.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Entity\ParentEntity.cs</FileName>
+      <HashCode>QMBEl4MBXGASUCQBlCEIEAxwkAoHgAhAAKgRglSGAiA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="_AutoFormMode" Hidden="true" />
+      <Field Name="_Dp" Hidden="true" />
+      <Field Name="_FormMode" Hidden="true" />
+      <Field Name="_Original" Hidden="true" />
+      <Method Name="IRuleInitUI.AfterLoadFound" Hidden="true" />
+      <Method Name="IRuleInitUI.AfterLoadNotFound" Hidden="true" />
+      <Method Name="IRuleInitUI.AfterSaveDelete" Hidden="true" />
+      <Method Name="IRuleInitUI.AfterSaveNew" Hidden="true" />
+      <Method Name="IRuleInitUI.AfterSaveUpdate" Hidden="true" />
+      <Method Name="IRuleInitUI.AfterSetDefault" Hidden="true" />
+      <Method Name="IRuleInitUI.BeforeLoad" Hidden="true" />
+      <Method Name="IRuleInitUI.BeforeSaveDelete" Hidden="true" />
+      <Method Name="IRuleInitUI.BeforeSaveNew" Hidden="true" />
+      <Method Name="IRuleInitUI.BeforeSaveUpdate" Hidden="true" />
+      <Method Name="IRuleInitUI.EndUI" Hidden="true" />
+      <Method Name="IRuleInitUI.ErrorAfterSaveDelete" Hidden="true" />
+      <Method Name="IRuleInitUI.ErrorAfterSaveNew" Hidden="true" />
+      <Method Name="IRuleInitUI.ErrorAfterSaveUpdate" Hidden="true" />
+      <Method Name="IRuleInitUI.GetBrowseFilter" Hidden="true" />
+      <Method Name="IRuleInitUI.InitUI" Hidden="true" />
+      <Method Name="IRuleInitUI.UpdateLoadSqlFields" Hidden="true" />
+      <Field Name="OnSetFormMode" Hidden="true" />
+    </Members>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SentraSolutionFramework.Entity.ViewEntity">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entity\ParentEntity.cs</FileName>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAQAAAAAAAAABAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="_Dp" Hidden="true" />
+    </Members>
+  </Class>
+  <Class Name="SentraSolutionFramework.Entity.ChildEntity&lt;TParent&gt;">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entity\ParentEntity.cs</FileName>
+      <HashCode>EAAAACAAAAAAQAAgAAEAEAAAAAAAgAAAAAACAAQEAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="_ChildName" Hidden="true" />
+      <Field Name="_ParentEntity" Hidden="true" />
+      <Method Name="IChildEntity.CreateParent" Hidden="true" />
+      <Method Name="IChildEntity.Init" Hidden="true" />
+      <Field Name="OnDataChanged" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SentraSolutionFramework.Entity.BusinessEntity" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="6" Y="7.137" />
+        <Point X="6" Y="7.897" />
+        <Point X="2" Y="7.897" />
+      </Path>
+    </InheritanceLine>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SentraSolutionFramework.Entity.ReportEntity">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entity\ReportEntity.cs</FileName>
+      <HashCode>AACAGiIQBASCUQAUAQAAAAAAAAACACCAAAAEAAUEQAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="_Dp" Hidden="true" />
+      <Property Name="IFilterForm.FilterList" Hidden="true" />
+      <Method Name="IReportEntity.EndUI" Hidden="true" />
+      <Method Name="IReportEntity.GetColumnHidden" Hidden="true" />
+      <Method Name="IReportEntity.GetDataSource" Hidden="true" />
+      <Method Name="IReportEntity.GetVariables" Hidden="true" />
+      <Method Name="IReportEntity.InitUI" Hidden="true" />
+      <Method Name="IReportEntity.SetFormChanged" Hidden="true" />
+      <Method Name="IReportEntity.SetPersistanceField" Hidden="true" />
+      <Method Name="IReportEntity.SetReportRefresh" Hidden="true" />
+      <Method Name="IShowView.ShowView" Hidden="true" />
+      <Field Name="OnFormChanged" Hidden="true" />
+      <Field Name="OnReportRefresh" Hidden="true" />
+    </Members>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+</ClassDiagram>

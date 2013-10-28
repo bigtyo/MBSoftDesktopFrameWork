@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessPersistance", "..\SentraSolutionFramework\AccessPersistance\AccessPersistance.csproj", "{157382A2-91D1-4948-BBE8-7F5D09ACE2EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentraSecurity", "..\SentraSolutionFramework\SentraSecurity\SentraSecurity.csproj", "{46C2338B-698B-4BD9-A0F9-CAD8047943A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentraSolutionFramework", "..\SentraSolutionFramework\SentraSolutionFramework\SentraSolutionFramework.csproj", "{FC43AC75-8B8A-4E5A-9D42-BEDCA018FEC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentraUtility", "..\SentraSolutionFramework\SentraUtility\SentraUtility.csproj", "{D44FBDFE-A368-4A31-ABDF-5D646B36E854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentraWinFramework", "..\SentraSolutionFramework\SentraWinFramework\SentraWinFramework.csproj", "{7E361179-46AA-4D2A-9F7F-9F283D899CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentraWinSecurity", "..\SentraSolutionFramework\SentraWinSecurity\SentraWinSecurity.csproj", "{843235A0-0399-445E-9024-5498E07527EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlServerPersistance", "..\SentraSolutionFramework\SqlServerPersistance\SqlServerPersistance.csproj", "{05857DF6-7DBE-45BB-8A1C-964024A6A08A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemBukuBesar", "SistemBukuBesar\SistemBukuBesar.csproj", "{435C17A2-BDC2-408D-A4C9-ECECC3CE08F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesterEvaluator", "TesterEvaluator\TesterEvaluator.csproj", "{AF9E1014-3B57-4936-82DC-DF7430854270}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BxEventClient", "..\..\..\MSS Project\BARINDO\BxEventServer\BxEventClient\BxEventClient.csproj", "{0C3705C0-97E3-4D89-A430-C872D88B798B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentraGLEntity", "..\..\..\MSS Project\SentraGL\SentraGLEntity.csproj", "{DC432EA0-F71A-4441-9F26-338EBB4AD7EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentraGLControl", "..\..\..\MSS Project\SentraGLControl\SentraGLControl.csproj", "{4168E2AF-B059-4D22-9D54-1F1A2346E722}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{157382A2-91D1-4948-BBE8-7F5D09ACE2EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{157382A2-91D1-4948-BBE8-7F5D09ACE2EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{157382A2-91D1-4948-BBE8-7F5D09ACE2EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{157382A2-91D1-4948-BBE8-7F5D09ACE2EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C2338B-698B-4BD9-A0F9-CAD8047943A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C2338B-698B-4BD9-A0F9-CAD8047943A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C2338B-698B-4BD9-A0F9-CAD8047943A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C2338B-698B-4BD9-A0F9-CAD8047943A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC43AC75-8B8A-4E5A-9D42-BEDCA018FEC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC43AC75-8B8A-4E5A-9D42-BEDCA018FEC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC43AC75-8B8A-4E5A-9D42-BEDCA018FEC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC43AC75-8B8A-4E5A-9D42-BEDCA018FEC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D44FBDFE-A368-4A31-ABDF-5D646B36E854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44FBDFE-A368-4A31-ABDF-5D646B36E854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44FBDFE-A368-4A31-ABDF-5D646B36E854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44FBDFE-A368-4A31-ABDF-5D646B36E854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E361179-46AA-4D2A-9F7F-9F283D899CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E361179-46AA-4D2A-9F7F-9F283D899CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E361179-46AA-4D2A-9F7F-9F283D899CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E361179-46AA-4D2A-9F7F-9F283D899CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843235A0-0399-445E-9024-5498E07527EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843235A0-0399-445E-9024-5498E07527EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843235A0-0399-445E-9024-5498E07527EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843235A0-0399-445E-9024-5498E07527EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05857DF6-7DBE-45BB-8A1C-964024A6A08A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05857DF6-7DBE-45BB-8A1C-964024A6A08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05857DF6-7DBE-45BB-8A1C-964024A6A08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05857DF6-7DBE-45BB-8A1C-964024A6A08A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{435C17A2-BDC2-408D-A4C9-ECECC3CE08F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{435C17A2-BDC2-408D-A4C9-ECECC3CE08F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{435C17A2-BDC2-408D-A4C9-ECECC3CE08F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{435C17A2-BDC2-408D-A4C9-ECECC3CE08F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF9E1014-3B57-4936-82DC-DF7430854270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9E1014-3B57-4936-82DC-DF7430854270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9E1014-3B57-4936-82DC-DF7430854270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9E1014-3B57-4936-82DC-DF7430854270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C3705C0-97E3-4D89-A430-C872D88B798B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C3705C0-97E3-4D89-A430-C872D88B798B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C3705C0-97E3-4D89-A430-C872D88B798B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C3705C0-97E3-4D89-A430-C872D88B798B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC432EA0-F71A-4441-9F26-338EBB4AD7EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC432EA0-F71A-4441-9F26-338EBB4AD7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC432EA0-F71A-4441-9F26-338EBB4AD7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC432EA0-F71A-4441-9F26-338EBB4AD7EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4168E2AF-B059-4D22-9D54-1F1A2346E722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4168E2AF-B059-4D22-9D54-1F1A2346E722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4168E2AF-B059-4D22-9D54-1F1A2346E722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4168E2AF-B059-4D22-9D54-1F1A2346E722}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = 
+	EndGlobalSection
+EndGlobal

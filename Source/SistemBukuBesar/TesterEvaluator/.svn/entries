@@ -1,0 +1,65 @@
+8
+
+dir
+0
+file:///D:/Repositories/SistemBukuBesar/trunk/TesterEvaluator
+file:///D:/Repositories/SistemBukuBesar
+add
+
+
+
+
+
+has-props
+has-prop-mods
+svn:special svn:externals svn:needs-lock
+
+Form1.resx
+file
+
+
+
+add
+
+clsTest.cs
+file
+
+
+
+add
+
+Form1.Designer.cs
+file
+
+
+
+add
+
+Form1.cs
+file
+
+
+
+add
+
+TesterEvaluator.csproj
+file
+
+
+
+add
+
+Program.cs
+file
+
+
+
+add
+
+Properties
+dir
+
+
+
+add
+

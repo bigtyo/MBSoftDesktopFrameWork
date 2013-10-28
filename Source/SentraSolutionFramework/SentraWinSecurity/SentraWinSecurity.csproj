@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{843235A0-0399-445E-9024-5498E07527EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SentraWinSecurity</RootNamespace>
+    <AssemblyName>SentraWinSecurity</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v8.3.Core, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v8.3, Version=8.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsFormLog.cs" />
+    <Compile Include="ConnectionForm\frmAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionForm\frmAccess.Designer.cs">
+      <DependentUpon>frmAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionForm\frmSqlServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionForm\frmSqlServer.Designer.cs">
+      <DependentUpon>frmSqlServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDbManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDbManager.Designer.cs">
+      <DependentUpon>frmDbManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSecurityDocument.Designer.cs">
+      <DependentUpon>frmSecurityDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSecurityForm.Designer.cs">
+      <DependentUpon>frmSecurityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecurityReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSecurityReport.Designer.cs">
+      <DependentUpon>frmSecurityReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserLog.Designer.cs">
+      <DependentUpon>frmUserLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserRole.Designer.cs">
+      <DependentUpon>frmUserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="License\frmRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="License\frmRegistration.Designer.cs">
+      <DependentUpon>frmRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseWinSecurity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConnectionForm\frmAccess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectionForm\frmSqlServer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSqlServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDbManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDbManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSecurityDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSecurityDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSecurityForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSecurityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSecurityReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSecurityReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserLog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserRole.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="License\frmRegistration.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccessPersistance\AccessPersistance.csproj">
+      <Project>{157382A2-91D1-4948-BBE8-7F5D09ACE2EC}</Project>
+      <Name>AccessPersistance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SentraSecurity\SentraSecurity.csproj">
+      <Project>{46C2338B-698B-4BD9-A0F9-CAD8047943A2}</Project>
+      <Name>SentraSecurity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SentraSolutionFramework\SentraSolutionFramework.csproj">
+      <Project>{FC43AC75-8B8A-4E5A-9D42-BEDCA018FEC8}</Project>
+      <Name>SentraSolutionFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SentraUtility\SentraUtility.csproj">
+      <Project>{D44FBDFE-A368-4A31-ABDF-5D646B36E854}</Project>
+      <Name>SentraUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SentraWinFramework\SentraWinFramework.csproj">
+      <Project>{7E361179-46AA-4D2A-9F7F-9F283D899CD9}</Project>
+      <Name>SentraWinFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlServerPersistance\SqlServerPersistance.csproj">
+      <Project>{05857DF6-7DBE-45BB-8A1C-964024A6A08A}</Project>
+      <Name>SqlServerPersistance</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\clsFormLog.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessmen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id_card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\SentraSecurity.License.Registration.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1_time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users3_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key1_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor_brush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forbidden.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

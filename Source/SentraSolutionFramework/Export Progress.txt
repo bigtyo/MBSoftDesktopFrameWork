@@ -1,0 +1,13 @@
+private void button1_Click(object sender, System.EventArgs e) {
+   DevExpress.XtraPrinting.IPrintingSystem ps = DevExpress.XtraPrinting.PrintHelper.GetCurrentPS();
+   ps.AfterChange += new DevExpress.XtraPrinting.ChangeEventHandler(Export_Progress);
+   pivotGridControl1.ExportToHtml("export.html");
+   ps.AfterChange -= new DevExpress.XtraPrinting.ChangeEventHandler(Export_Progress);
+}
+
+private void Export_Progress(object sender, DevExpress.XtraPrinting.ChangeEventArgs e) {
+   if (e.EventName == DevExpress.XtraPrinting.SR.ProgressPositionChanged) {
+      int pos = (int)e.ValueOf(DevExpress.XtraPrinting.SR.ProgressPosition);
+      progressBar1.Value = pos;
+   }
+}

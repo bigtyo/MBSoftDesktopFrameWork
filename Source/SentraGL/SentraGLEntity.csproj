@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC432EA0-F71A-4441-9F26-338EBB4AD7EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SentraGL</RootNamespace>
+    <AssemblyName>SentraGLEntity</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SentraSecurity, Version=3.1.3365.30592, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Framework\SentraSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="SentraSolutionFramework, Version=3.1.3365.30592, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Framework\SentraSolutionFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="SentraUtility, Version=3.1.3365.30591, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Framework\SentraUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseGL.cs" />
+    <Compile Include="Document\PenerimaanKasUmum.cs" />
+    <Compile Include="Document\KursHarian.cs" />
+    <Compile Include="DocumentEntity.cs" />
+    <Compile Include="Document\PengeluaranKasUmum.cs" />
+    <Compile Include="Document\PerintahBayar.cs" />
+    <Compile Include="Document\TransferAntarKas.cs" />
+    <Compile Include="Document\ViewTransaksiKas.cs" />
+    <Compile Include="Master\Akun.cs" />
+    <Compile Include="Master\AturanJurnal.cs" />
+    <Compile Include="Master\Departemen.cs" />
+    <Compile Include="Master\JenisDokSumberJurnal.cs" />
+    <Compile Include="Document\Jurnal.cs" />
+    <Compile Include="Master\JenisKas.cs" />
+    <Compile Include="Master\JurnalOtomatis.cs" />
+    <Compile Include="Master\NilaiTukarSaldoAwal.cs" />
+    <Compile Include="Master\MataUang.cs" />
+    <Compile Include="Master\Proyek.cs" />
+    <Compile Include="Master\SaldoAwalAkun.cs" />
+    <Compile Include="Master\Test.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\ArusKas.cs" />
+    <Compile Include="Report\FungsiGL.cs" />
+    <Compile Include="Report\MutasiAkun\MutasiAkunTertentu.cs" />
+    <Compile Include="Report\Neraca\NeracaBebas.cs" />
+    <Compile Include="Report\Neraca\NeracaBulananKlp.cs" />
+    <Compile Include="Report\Neraca\NeracaBulananLevel.cs" />
+    <Compile Include="Report\Neraca\NeracaKlp.cs" />
+    <Compile Include="Report\Neraca\NeracaLevel.cs" />
+    <Compile Include="Report\Neraca\NeracaMultiPeriodeKlp.cs" />
+    <Compile Include="Report\Neraca\NeracaMultiPeriodeLevel.cs" />
+    <Compile Include="Report\Neraca\NeracaPerbandinganKlp.cs" />
+    <Compile Include="Report\Neraca\NeracaPerbandinganLevel.cs" />
+    <Compile Include="Report\PosisiAkun.cs" />
+    <Compile Include="Report\ReportUmum.cs" />
+    <Compile Include="Report\RingkasanAkun\RingkasanAkunKlp.cs" />
+    <Compile Include="Report\RingkasanAkun\RingkasanAkunLevel.cs" />
+    <Compile Include="Report\ViewAkun.cs" />
+    <Compile Include="SetingPerusahaan.cs" />
+    <Compile Include="RingkasanAkun.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\LabaRugi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
